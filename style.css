@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    color: White;
+    background-color: hsl(240, 25%, 25%);
+    font-family: "Lato", sans-serif;
+    border-radius: 1vmin;
+    border: none;
+    margin: 1vmin;
+    padding: 2vmin;
+    font-size: 2vmin;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.2s;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 2vmin;
+    background-color: hsl(240, 20%, 20%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 100%;
+    flex-flow: column wrap;
+}
+
+body *:not(script) {
+    display: flex;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 300%;
+    justify-content: center;
+    display: initial;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+p {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    font-size: 100%;
+}
+
+button,
+select,
+option {
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover,
+select:hover {
+    background-color: var(--gray-20);
+}
+
+button:active,
+select:active {
+    background-color: var(--gray-20);
+}
+
+input:focus {
+    background-color: var(--gray-20);
+}
+
+button:disabled:hover {
+    background-color: var(--gray-30);
+}
+
+button:active:disabled {
+    background-color: var(--gray-30);
+}
+
+:disabled {
+    background-color: var(--gray-30);
+    cursor: initial;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.full-width {
+    width: calc(100% - 2vmin);
+}
+
+.full-height {
+    height: calc(100% - 2vmin);
+}
+
+.extra-bottom-margin {
+    margin-bottom: 2vmin;
+}
+
+div * {
+    background-color: var(--gray-20);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%) rotate(90deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%) rotate(-90deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
