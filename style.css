@@ -17,8 +17,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
-    align-items: stretch;
-    align-content: stretch;
+    justify-content: center;
 }
 
 html {
@@ -49,12 +48,11 @@ body *:not(script) {
 h1 {
     font-size: 300%;
     justify-content: center;
+    align-items: center;
     display: initial;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 p {
-    animation: 1s ease-out 0s 1 slideInFromRight;
     font-size: 100%;
 }
 
@@ -63,33 +61,7 @@ select,
 option {
     cursor: pointer;
     text-align: center;
-}
-
-button:hover,
-select:hover {
-    background-color: var(--gray-20);
-}
-
-button:active,
-select:active {
-    background-color: var(--gray-20);
-}
-
-input:focus {
-    background-color: var(--gray-20);
-}
-
-button:disabled:hover {
-    background-color: var(--gray-30);
-}
-
-button:active:disabled {
-    background-color: var(--gray-30);
-}
-
-:disabled {
-    background-color: var(--gray-30);
-    cursor: initial;
+    align-items: center;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -111,26 +83,61 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-bottom: 2vmin;
 }
 
-div * {
-    background-color: var(--gray-20);
-}
-
-@keyframes slideInFromLeft {
+@keyframes slideIn {
     0% {
-        transform: translateX(-100%) rotate(90deg);
+        transform: translateX(-100%);
     }
 
     100% {
-        transform: translateX(0) rotate(0deg);
+        transform: translateX(0);
     }
 }
 
-@keyframes slideInFromRight {
+@keyframes slideOut {
     0% {
-        transform: translateX(100%) rotate(-90deg);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(0) rotate(0deg);
+        transform: translateX(100%);
     }
+}
+
+.page {
+    flex-grow: 10;
+    flex-flow: column nowrap;
+    animation: slideIn 0.5s ease-out 0s 1 normal;
+}
+
+div {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#aboutMeButton {
+    background-color: hsl(240, 30%, 30%);
+}
+
+#music, #codingProjects {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    justify-content: stretch;
+    flex-grow: 3;
+}
+
+a {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 200%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: hsl(240, 30%, 30%);
 }

@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://caretparrot.github.io/My-Libraries/Profile%20Picture.png">
     <link rel="manifest" href="manifest.json">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>About Me</h1>
-    <p>TODO: Fill out!</p>
+    <div id="navbar">
+        <button class="navButtons" id="aboutMeButton" onclick="switchPage('aboutMe')">About Me</button>
+        <button class="navButtons" id="musicButton" onclick="switchPage('music')">Music</button>
+        <button class="navButtons" id="codingProjectsButton" onclick="switchPage('codingProjects')">Coding Projects</button>
+    </div>
+    <div id="aboutMe" class="page">
+        <h1>About Me</h1>
+        <p>Hello there!</p>
+    </div>
+    <div id="music" class="page">
+        <h1>Music</h1>
+    </div>
+    <div id="codingProjects" class="page">
+        <h1>Coding Projects</h1>
+        <div class="grid" style="grid: auto / auto auto auto;">
+            <a href="https://caretparrot.github.io/Tile-Town">Tile Town</a>
+            <a href="https://caretparrot.github.io/Tile-Rodeo">Tile Rodeo</a>
+            <a href="https://caretparrot.github.io/Auto-Grapher">Auto Grapher</a>
+            <a href="https://caretparrot.github.io/Metronome">Metronome</a>
+            <a href="https://caretparrot.github.io/Hot-Take">Hot-Take</a>
+        </div>
+    </div>
 </body>
 </html>
