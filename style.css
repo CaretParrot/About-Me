@@ -6,17 +6,14 @@
     font-family: "Lato", sans-serif;
     border-radius: 1vmin;
     border: none;
-    margin: 1vmin;
-    padding: 2vmin;
-    font-size: 2vmin;
+    margin: 2vmin;
+    padding: 3vmin;
+    font-size: 24px;
     outline: none;
     box-sizing: border-box;
     transition: 0.2s;
-    -ms-overflow-style: none;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll;
     justify-content: center;
 }
 
@@ -24,20 +21,20 @@ html {
     margin: 0;
     padding: 0;
     background-color: transparent;
-    width: 100vw;
-    height: 100vh;
-    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
 }
 
 body {
     margin: 0;
-    padding: 2vmin;
+    padding: 3vmin;
     background-color: hsl(240, 20%, 20%);
     width: 100%;
     height: 100%;
     display: flex;
-    font-size: 100%;
-    flex-flow: column wrap;
+    font-size: 24px;
+    flex-flow: column nowrap;
 }
 
 body *:not(script) {
@@ -46,14 +43,17 @@ body *:not(script) {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 48px;
     justify-content: center;
     align-items: center;
     display: initial;
+    display: flex !important;
 }
 
 p {
-    font-size: 100%;
+    font-size: 24px;
+    justify-content: flex-start;
+    line-height: 5vmin;
 }
 
 button,
@@ -72,11 +72,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .full-width {
-    width: calc(100% - 2vmin);
+    width: calc(100% - 2vw);
 }
 
 .full-height {
-    height: calc(100% - 2vmin);
+    height: calc(100% - 2vh);
 }
 
 .extra-bottom-margin {
@@ -105,21 +105,29 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .page {
     flex-grow: 10;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     animation: slideIn 0.5s ease-out 0s 1 normal;
+    padding: 0;
+    margin: 0;
 }
 
 div {
     background-color: transparent;
     padding: 0;
     margin: 0;
+    width: 100%;
+}
+
+div * {
+    display: block;
 }
 
 #aboutMeButton {
     background-color: hsl(240, 30%, 30%);
 }
 
-#music, #codingProjects {
+#music,
+#codingProjects {
     display: none;
 }
 
@@ -133,11 +141,14 @@ a {
     justify-content: center;
     align-content: center;
     align-items: center;
-    font-size: 200%;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
     background-color: hsl(240, 30%, 30%);
+}
+
+#navbar {
+    flex-flow: row wrap;
 }

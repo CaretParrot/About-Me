@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://caretparrot.github.io/My-Libraries/Profile%20Picture.png">
-    <link rel="manifest" href="manifest.json">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <div id="navbar">
-        <button class="navButtons" id="aboutMeButton" onclick="switchPage('aboutMe')">About Me</button>
-        <button class="navButtons" id="musicButton" onclick="switchPage('music')">Music</button>
-        <button class="navButtons" id="codingProjectsButton" onclick="switchPage('codingProjects')">Coding Projects</button>
-    </div>
-    <div id="aboutMe" class="page">
-        <h1>About Me</h1>
-        <p>Hello there!</p>
-    </div>
-    <div id="music" class="page">
-        <h1>Music</h1>
-    </div>
-    <div id="codingProjects" class="page">
-        <h1>Coding Projects</h1>
-        <div class="grid" style="grid: auto / auto auto auto;">
-            <a href="https://caretparrot.github.io/Tile-Town">Tile Town</a>
-            <a href="https://caretparrot.github.io/Tile-Rodeo">Tile Rodeo</a>
-            <a href="https://caretparrot.github.io/Auto-Grapher">Auto Grapher</a>
-            <a href="https://caretparrot.github.io/Metronome">Metronome</a>
-            <a href="https://caretparrot.github.io/Hot-Take">Hot-Take</a>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="https://caretparrot.github.io/My-Libraries/Profile%20Picture.png">
+        <link rel="manifest" href="manifest.json">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="navbar">
+            <button class="navButtons" id="aboutMeButton" onclick="switchPage('aboutMe')">About Me</button>
+            <button class="navButtons" id="musicButton" onclick="switchPage('music')">Music</button>
+            <button class="navButtons" id="codingProjectsButton" onclick="switchPage('codingProjects')">Coding
+                Projects</button>
         </div>
-    </div>
-</body>
+        <div id="aboutMe" class="page">
+            <h1 class="header">About Me</h1>
+            <p>Hello there! I'm Rishi, a student entering senior year soon. I am an aspiring web and software developer,
+                music composer, and chess enthusiast.</p>
+        </div>
+        <div id="music" class="page">
+            <h1 class="header">Music</h1>
+            <div>
+                <h1>String Orchestra</h1>
+                <iframe src="https://www.bandlab.com/embed/?id=f2d57395-c180-ed11-9d7a-000d3a3eed2a"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.bandlab.com/embed/?id=d8060ea6-af76-ee11-9937-000d3a41ec2a"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.bandlab.com/embed/collection/?id=fa8cf9d3-f70b-ef11-96f5-00224844fb63"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <h1>Violin</h1>
+                <iframe src="https://www.bandlab.com/embed/collection/?id=405e3b31-d84c-ed11-819a-00224844ccac"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <h1>Viola</h1>
+                <iframe src="https://www.bandlab.com/embed/collection/?id=622a98e0-84f2-ec11-b47a-501ac5bd13cd"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="353"
+                    src="https://www.bandlab.com/embed/collection/?id=aeaf3768-faa7-ee11-8925-0022484526f6"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="codingProjects" class="page">
+            <h1 class="header">Coding Projects</h1>
+            <div>
+                <a href="https://caretparrot.github.io/Tile-Town">Tile Town</a>
+                <a href="https://caretparrot.github.io/Tile-Rodeo">Tile Rodeo</a>
+                <a href="https://caretparrot.github.io/Auto-Grapher">Auto Grapher</a>
+            </div>
+            <div>
+                <a href="https://caretparrot.github.io/Metronome">Metronome</a>
+                <a href="https://caretparrot.github.io/Hot-Take">Hot-Take</a>
+            </div>
+        </div>
+    </body>
+
 </html>
