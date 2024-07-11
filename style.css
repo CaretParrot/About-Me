@@ -11,10 +11,11 @@
     font-size: 24px;
     outline: none;
     box-sizing: border-box;
-    transition: 0.2s;
+    transition: 0.5s;
     scrollbar-width: none;
     -ms-overflow-style: none;
     justify-content: center;
+    line-height: 1.5em;
 }
 
 html {
@@ -28,32 +29,32 @@ html {
 
 body {
     margin: 0;
-    padding: 3vmin;
     background-color: hsl(240, 20%, 20%);
     width: 100%;
     height: 100%;
-    display: flex;
     font-size: 24px;
     flex-flow: column nowrap;
 }
 
-body *:not(script) {
+body *:not(script), body {
     display: flex;
-    flex-grow: 1;
+    flex: auto;
 }
 
 h1 {
     font-size: 48px;
     justify-content: center;
     align-items: center;
-    display: initial;
-    display: flex !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    justify-content: center;
+    align-items: center;
 }
 
 p {
     font-size: 24px;
     justify-content: flex-start;
-    line-height: 5vmin;
 }
 
 button,
@@ -104,8 +105,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .page {
-    flex-grow: 10;
-    flex-flow: column wrap;
+    flex: auto;
     animation: slideIn 0.5s ease-out 0s 1 normal;
     padding: 0;
     margin: 0;
@@ -134,7 +134,7 @@ div * {
 .grid {
     display: grid;
     justify-content: stretch;
-    flex-grow: 3;
+    flex: auto;
 }
 
 a {
@@ -149,6 +149,10 @@ a:hover {
     background-color: hsl(240, 30%, 30%);
 }
 
+.header {
+    flex: 100 0 auto;
+}
+
 #navbar {
-    flex-flow: row wrap;
+    flex: 0 0 auto;
 }
