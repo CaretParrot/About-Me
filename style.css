@@ -37,6 +37,10 @@ body {
     height: 100%;
 }
 
+body * :not(script) {
+    display: flex;
+}
+
 h1 {
     font-size: 3rem;
 }
