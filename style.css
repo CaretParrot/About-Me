@@ -8,7 +8,7 @@
     border: none;
     margin: 2vmin;
     padding: 2vmin;
-    font-size: 24px;
+    font-size: 1rem;
     outline: none;
     box-sizing: border-box;
     transition: 0.5s;
@@ -26,7 +26,7 @@ html {
     background-color: transparent;
     width: 100%;
     height: 100%;
-    font-size: 24px;
+    font-size: 3vmin;
 }
 
 body {
@@ -34,7 +34,6 @@ body {
     background-color: hsl(240, 0%, 10%);
     width: 100%;
     height: 100%;
-    font-size: 24px;
 }
 
 body *:not(script), body {
@@ -42,11 +41,11 @@ body *:not(script), body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-size: 24px;
     justify-content: flex-start;
 }
 
@@ -107,6 +105,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .page {
+    flex: 1 1 auto;
     animation: slideIn 0.5s ease-out 0s 1 normal;
     padding: 0;
     margin: 0;
@@ -138,7 +137,7 @@ a {
 }
 
 .header {
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 
 a:hover {
@@ -146,23 +145,18 @@ a:hover {
 }
 
 #navbar {
-    flex-grow: 2;
+    flex: 0 0 auto;
     flex-flow: row wrap;
     background-color: hsl(240, 15%, 15%);
 }
 
 @media (orientation: portrait) {
-    * {
-        flex-flow: row wrap;
-    }
-
-    #navbar {
-        flex: 0 0 auto;
-        flex-flow: row wrap;
-        background-color: hsl(240, 15%, 15%);
-    }
-
-    .header {
-        flex: 1 0 auto;
+    html {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        font-size: 5vmin;
     }
 }
