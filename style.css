@@ -17,7 +17,7 @@
     justify-content: center;
     line-height: 1.5em;
     flex: 1 1 auto;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 html {
@@ -34,10 +34,6 @@ body {
     background-color: hsl(240, 0%, 10%);
     width: 100%;
     height: 100%;
-}
-
-body *:not(script), body {
-    display: flex;
 }
 
 h1 {
@@ -73,11 +69,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .full-width {
-    width: calc(100% - 2vw);
+    width: calc(100% - 2vmin);
 }
 
 .full-height {
-    height: calc(100% - 2vh);
+    height: calc(100% - 2vmin);
 }
 
 .extra-bottom-margin {
@@ -145,8 +141,9 @@ a:hover {
 }
 
 #navbar {
+    width: calc(100% - 4vmin);
     flex: 0 0 auto;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     background-color: hsl(240, 15%, 15%);
 }
 
