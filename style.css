@@ -156,3 +156,9 @@ a:hover {
 #navbar {
     flex: 0 0 auto;
 }
+
+@media (orientation: portrait) {
+    body {
+        flex-flow: row nowrap;
+    }
+}
