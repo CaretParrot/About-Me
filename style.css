@@ -2,12 +2,12 @@
 
 * {
     color: White;
-    background-color: hsl(240, 25%, 25%);
+    background-color: hsl(240, 20%, 20%);
     font-family: "Lato", sans-serif;
     border-radius: 1vmin;
     border: none;
     margin: 2vmin;
-    padding: 3vmin;
+    padding: 2vmin;
     font-size: 24px;
     outline: none;
     box-sizing: border-box;
@@ -16,6 +16,8 @@
     -ms-overflow-style: none;
     justify-content: center;
     line-height: 1.5em;
+    flex: 1 1 auto;
+    flex-flow: column wrap;
 }
 
 html {
@@ -29,22 +31,22 @@ html {
 
 body {
     margin: 0;
-    background-color: hsl(240, 20%, 20%);
+    background-color: hsl(240, 0%, 10%);
     width: 100%;
     height: 100%;
     font-size: 24px;
-    flex-flow: column nowrap;
 }
 
 body *:not(script), body {
     display: flex;
-    flex: auto;
 }
 
 h1 {
     font-size: 48px;
-    justify-content: center;
-    align-items: center;
+}
+
+h2 {
+    font-size: 36px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -105,10 +107,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .page {
-    flex: auto;
     animation: slideIn 0.5s ease-out 0s 1 normal;
     padding: 0;
     margin: 0;
+    background-color: hsl(240, 15%, 15%);
 }
 
 div {
@@ -118,23 +120,13 @@ div {
     width: 100%;
 }
 
-div * {
-    display: block;
-}
-
 #aboutMeButton {
-    background-color: hsl(240, 30%, 30%);
+    background-color: hsl(240, 25%, 25%);
 }
 
 #music,
 #codingProjects {
     display: none;
-}
-
-.grid {
-    display: grid;
-    justify-content: stretch;
-    flex: auto;
 }
 
 a {
@@ -145,20 +137,32 @@ a {
     font-weight: bold;
 }
 
-a:hover {
-    background-color: hsl(240, 30%, 30%);
+.header {
+    flex: 1 0 auto;
 }
 
-.header {
-    flex: 100 0 auto;
+a:hover {
+    background-color: hsl(240, 25%, 25%);
 }
 
 #navbar {
-    flex: 0 0 auto;
+    flex-grow: 2;
+    flex-flow: row wrap;
+    background-color: hsl(240, 15%, 15%);
 }
 
 @media (orientation: portrait) {
-    body {
-        flex-flow: row nowrap;
+    * {
+        flex-flow: row wrap;
+    }
+
+    #navbar {
+        flex: 0 0 auto;
+        flex-flow: row wrap;
+        background-color: hsl(240, 15%, 15%);
+    }
+
+    .header {
+        flex: 1 0 auto;
     }
 }
