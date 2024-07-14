@@ -17,7 +17,6 @@
     justify-content: center;
     line-height: 1.5em;
     flex: 1 1 auto;
-    flex-flow: column nowrap;
 }
 
 html {
@@ -26,7 +25,8 @@ html {
     background-color: transparent;
     width: 100%;
     height: 100%;
-    font-size: 3vmin;
+    font-size: 2vmin;
+    display: flex;
 }
 
 body {
@@ -34,6 +34,9 @@ body {
     background-color: hsl(240, 0%, 10%);
     width: 100%;
     height: 100%;
+    display: flex;
+    font-size: 2vmin;
+    flex-flow: column nowrap;
 }
 
 body * :not(script) {
@@ -48,7 +51,12 @@ h2 {
     font-size: 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     justify-content: center;
     align-items: center;
 }
@@ -106,6 +114,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .page {
     flex: 1 1 auto;
+    flex-flow: column nowrap;
     animation: slideIn 0.5s ease-out 0s 1 normal;
     padding: 0;
     margin: 0;
@@ -113,6 +122,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 div {
+    display: flex;
     background-color: transparent;
     padding: 0;
     margin: 0;
@@ -145,9 +155,8 @@ a:hover {
 }
 
 #navbar {
-    width: calc(100% - 4vmin);
-    flex: 0 0 auto;
     flex-flow: row nowrap;
+    flex: 0 0 auto;
     background-color: hsl(240, 15%, 15%);
 }
 
@@ -158,6 +167,20 @@ a:hover {
         background-color: transparent;
         width: 100%;
         height: 100%;
-        font-size: 5vmin;
+        font-size: 3vmin;
+    }
+
+    body {
+        flex-flow: row wrap;
+    }
+
+    #navbar {
+        flex-flow: row nowrap;
+        flex: 0 0 auto;
+        background-color: hsl(240, 15%, 15%);
+    }
+
+    .header {
+        flex: 0 0 auto;
     }
 }
