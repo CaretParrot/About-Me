@@ -170,17 +170,16 @@ a:hover {
         font-size: 3vmin;
     }
 
-    body {
-        flex-flow: row wrap;
-    }
-
     #navbar {
-        flex-flow: row nowrap;
         flex: 0 0 auto;
         background-color: hsl(240, 15%, 15%);
     }
 
     .header {
         flex: 0 0 auto;
+    }
+
+    .page {
+        flex: 1 1 auto;
     }
 }
