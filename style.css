@@ -4,10 +4,10 @@
     color: White;
     background-color: hsl(240, 20%, 20%);
     font-family: "Lato", sans-serif;
-    border-radius: 1vmin;
+    border-radius: 1rem;
     border: none;
-    margin: 2vmin;
-    padding: 2vmin;
+    margin: 1rem;
+    padding: 1rem;
     font-size: 1rem;
     outline: none;
     box-sizing: border-box;
@@ -35,7 +35,6 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    font-size: 2vmin;
     flex-flow: column nowrap;
 }
 
@@ -81,15 +80,15 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .full-width {
-    width: calc(100% - 2vmin);
+    width: calc(100% - 2vw);
 }
 
 .full-height {
-    height: calc(100% - 2vmin);
+    height: calc(100% - 2vh);
 }
 
 .extra-bottom-margin {
-    margin-bottom: 2vmin;
+    margin-bottom: 1rem;
 }
 
 @keyframes slideIn {
@@ -158,28 +157,4 @@ a:hover {
     flex-flow: row nowrap;
     flex: 0 0 auto;
     background-color: hsl(240, 15%, 15%);
-}
-
-@media only screen and (max-width: 1080px) {
-    html {
-        margin: 0;
-        padding: 0;
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        font-size: 7vmin;
-    }
-
-    #navbar {
-        flex: 0 0 auto;
-        background-color: hsl(240, 15%, 15%);
-    }
-
-    .header {
-        flex: 0 0 auto;
-    }
-
-    .page {
-        flex: 1 1 auto;
-    }
 }
