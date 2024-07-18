@@ -158,3 +158,9 @@ a:hover {
     flex: 0 0 auto;
     background-color: hsl(240, 15%, 15%);
 }
+
+@media (orientation: portrait) {
+    html {
+        font-size: 4vmin;
+    }
+}
