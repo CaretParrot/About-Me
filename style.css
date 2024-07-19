@@ -157,7 +157,7 @@ a:hover {
     background-color: hsl(240, 15%, 15%);
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 540px) {
     html {
         font-size: 5vmin;
     }
