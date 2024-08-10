@@ -160,6 +160,8 @@ a:hover {
 @media screen and (max-width: 1080px) {
     * {
         font-size: 2rem;
+        margin: 2rem;
+        padding: 2rem;
     }
 
     h1 {
