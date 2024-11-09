@@ -12,6 +12,7 @@
 
 .page {
     flex-flow: column wrap;
+    margin: 0;
 }
 
 body>* :not(script) {
