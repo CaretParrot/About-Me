@@ -10,6 +10,10 @@
     margin: 0;
 }
 
+.page button, a {
+    background-color: hsl(240, 30%, 30%);
+}
+
 .page {
     flex-flow: column wrap;
     margin: 0;
