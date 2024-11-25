@@ -10,13 +10,11 @@
     margin: 0;
 }
 
-.page button, a {
-    background-color: hsl(240, 30%, 30%);
-}
-
 .page {
     flex-flow: column wrap;
     margin: 0;
+    animation-name: slideIn;
+    animation-duration: 0.25s;
 }
 
 body>* :not(script) {
@@ -30,4 +28,14 @@ div {
 
 #codingProjectsDiv {
     flex-flow: row wrap;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
