@@ -4,38 +4,36 @@
 }
 
 #navbar {
-    flex-flow: row wrap;
     background-color: transparent;
     padding: 0;
     margin: 0;
+    grid: auto / auto auto auto;
+    width: 100%;
+    display: grid;
+    height: 10%;
+}
+
+#aboutMe {
+    display: grid;
+}
+
+body {
+    grid: 20% / auto;
 }
 
 .page {
-    flex-flow: column wrap;
     margin: 0;
+    padding: 0;
     animation-name: slideIn;
     animation-duration: 0.25s;
+    height: 100%;
 }
 
-body>* :not(script) {
+#codingProjects {
+    grid: auto / auto auto auto;
+}
+
+a {
     display: flex;
-}
-
-div {
-    display: flex;
-    margin: 1rem;
-}
-
-#codingProjectsDiv {
     flex-flow: row wrap;
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
 }

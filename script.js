@@ -11,5 +11,5 @@ function switchPage(pageId) {
         allNavButtons[i].classList.remove("active");
     }
     document.getElementById(pageId + "Button").classList.add("active");
-    document.getElementById(pageId).style.display = "flex";
+    document.getElementById(pageId).style.display = "grid";
 }
