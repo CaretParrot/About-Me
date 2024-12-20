@@ -5,20 +5,23 @@
 
 #navbar {
     background-color: transparent;
-    padding: 0;
     margin: 0;
+    padding: 0;
     grid: auto / auto auto auto;
     width: 100%;
     display: grid;
-    height: 10%;
+    height: 100%;
 }
 
 #aboutMe {
     display: grid;
+    padding-bottom: 1rem;
 }
 
 body {
     grid: 20% / auto;
+    width: 100%;
+    height: 100%;
 }
 
 .page {
@@ -32,24 +35,44 @@ body {
 }
 
 #codingProjects {
-    grid: auto / auto auto auto;
+    grid: auto / auto auto;
 }
 
 a {
     display: flex;
     flex-flow: row wrap;
-}
-
-div {
-    width: calc(100% - 2rem);
-    height: calc(100% - 2rem);
-}
+} 
 
 html {
-    padding-bottom: 1rem;
+    width: 100%;
+    height: 100%;
 }
 
 #codingProjectsDiv {
     display: grid;
-    grid: auto / auto auto;
+    grid: auto / 50% 50%;
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
+}
+
+#codingProjectsDiv * {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+}
+
+div * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#aboutMeGrid {
+    display: grid;
+    grid: auto / auto 25%;
 }
