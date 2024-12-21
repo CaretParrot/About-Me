@@ -68,11 +68,18 @@ div * {
 }
 
 img {
-    width: 100%;
+    width: calc(100% - 2rem);
     border-radius: 1rem;
 }
 
 #aboutMeGrid {
     display: grid;
     grid: auto / auto 25%;
+}
+
+@media (pointer: coarse) {
+    #aboutMeGrid {
+        display: grid;
+        grid: auto / auto;
+    }
 }
