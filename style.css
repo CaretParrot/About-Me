@@ -1,5 +1,5 @@
 #codingProjects,
-#music {
+#socials {
     display: none;
 }
 
@@ -7,45 +7,31 @@
     background-color: transparent;
     margin: 0;
     padding: 0;
-    grid: auto / auto auto auto;
-    width: 100%;
     display: grid;
-    height: 100%;
-}
-
-#aboutMe {
-    display: grid;
-    padding-bottom: 1rem;
+    grid: auto / calc(100% / 3) calc(100% / 3) calc(100% / 3);
 }
 
 body {
-    grid: 20% / auto;
+    grid: 20% / 100%;
     width: 100%;
     height: 100%;
 }
 
 .page {
-    margin: 0;
-    padding: 0;
     animation-name: slideIn;
     animation-duration: 0.25s;
+    grid: auto / 100%;
     width: 100%;
     height: 100%;
-    grid: auto / auto;
 }
 
 #codingProjects {
-    grid: auto / auto auto;
+    grid: auto / 25% 25% 25% 25%;
 }
 
 a {
     display: flex;
     flex-flow: row wrap;
-} 
-
-html {
-    width: 100%;
-    height: 100%;
 }
 
 #codingProjectsDiv {
@@ -75,6 +61,8 @@ img {
 #aboutMeGrid {
     display: grid;
     grid: auto / auto 25%;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 @media (pointer: coarse) {
