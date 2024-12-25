@@ -71,3 +71,7 @@ img {
         grid: auto / auto;
     }
 }
+
+#codingProjectsHeader {
+    grid-area: 1 / 1 / 1 / 5;
+}
