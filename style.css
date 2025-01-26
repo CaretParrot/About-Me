@@ -1,3 +1,8 @@
+html {
+    display: flex;
+    height: auto;
+}
+
 #codingProjects,
 #socials {
     display: none;
@@ -10,17 +15,17 @@
     display: grid;
     width: 100%;
     height: 100%;
-    grid: auto / calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    grid: 1fr / 1fr 1fr 1fr;
 }
 
 body {
-    grid: 15% / 100%;
+    grid: 1fr / 1fr;
 }
 
 .page {
     animation-name: slideIn;
     animation-duration: 0.25s;
-    grid: auto / 100%;
+    grid: 1fr / 1fr;
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -44,6 +49,10 @@ img {
     margin: 1rem;
 }
 
+#socials {
+    grid: auto / 1fr;
+}
+
 @media (pointer: coarse) {
     #aboutMeGrid {
         display: grid;
@@ -51,16 +60,11 @@ img {
     }
 }
 
-#codingProjectsDiv {
+#codingProjects {
     background-color: transparent;
-    display: grid;
-    grid: auto / 1fr 1fr ;
+    grid: auto / 1fr 1fr;
     width: 100%;
     height: 100%;
-}
-
-#codingProjectsDiv * {
-    font-size: 1rem;
 }
 
 #pfp {
