@@ -1,6 +1,6 @@
 let currentPageId = "aboutMe";
 
-function switchPage(pageId) {
+function switchPage(pageId, display) {
     let allPages = document.getElementsByClassName("page");
     for (let i = 0; i < allPages.length; i++) {
         allPages[i].style.display = "none";
@@ -14,6 +14,6 @@ function switchPage(pageId) {
     document.getElementById(pageId + "Button").classList.add("active");
     document.getElementById("header").innerHTML = document.getElementById(pageId).dataset.header;
 
-    document.getElementById(pageId).style.display = "grid";
+    document.getElementById(pageId).style.display = display;
 }
 
