@@ -39,6 +39,8 @@ div * {
 
 img {
     border-radius: 1rem;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
 }
 
 #aboutMe {
@@ -59,4 +61,10 @@ img {
 a {
     width: auto;
     height: auto;
+}
+
+@media (orientation: portrait) {
+    #aboutMe {
+        grid: auto / 1fr;
+    }
 }
