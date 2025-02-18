@@ -14,14 +14,17 @@
 
     <body>
         <div id="navbar">
-            <button class="navButtons active" id="aboutMeButton" onclick="switchPage('aboutMe', 'grid')">About
+            <button id="aboutMeButton" class="navButtons active" onclick="switchPage('aboutMe', 'grid')">About
                 Me</button>
-            <button class="navButtons" id="socialsButton" onclick="switchPage('socials', 'flex')">Socials</button>
-            <button class="navButtons" id="codingProjectsButton" onclick="switchPage('codingProjects', 'flex')">Coding
+            <button id="socialsButton" class="navButtons" onclick="switchPage('socials', 'flex')">Socials</button>
+            <button id="codingProjectsButton" class="navButtons" onclick="switchPage('codingProjects', 'flex')">Coding
                 Projects</button>
+            <button id="musicPerformancesButton" class="navButtons"
+                onclick="switchPage('musicPerformances', 'grid')">Music Performances</button>
         </div>
         <h1 id="header">About Me</h1>
-        <div id="aboutMe" data-header="About Me" class="page">
+        <div id="aboutMe" data-header="About Me" class="page grid">
+            <h2>Bio</h2>
             <p>Hello there! I'm Rishi. I am an aspiring web and software developer, music composer, violist, and
                 chess enthusiast. I am also the founder of The Composers Foundry, a community dedicated to growing
                 the music making community and providing assistance to those who wish to get into the hobby.<br><br>
@@ -48,12 +51,12 @@
                 over 800 rapid rating points on chess.com and have reached a peak rating of 1663. I hope to continue
                 improving at chess in the future!</p>
         </div>
-        <div id="socials" data-header="Socials" class="page">
+        <div id="socials" data-header="Socials" class="page flex">
             <a href="https://instagram.com/caret.parrot">Instagram</a>
             <a href="https://github.com/caretparrot">Github</a>
             <a href="https://bandlab.com/caretparrot">Bandlab</a>
         </div>
-        <div id="codingProjects" data-header="Coding Projects" class="page">
+        <div id="codingProjects" data-header="Coding Projects" class="page flex">
             <a href="https://caretparrot.github.io/Auto-Grapher">Auto Grapher</a>
             <a href="https://github.com/CaretParrot/BlockFlip">BlockFlip</a>
             <a href="https://caretparrot.github.io/Calculator">Calculator</a>
@@ -63,6 +66,29 @@
             <a href="https://caretparrot.github.io/Noteworthy">Noteworthy</a>
             <a href="https://caretparrot.github.io/Tile-Town">Tile Town</a>
             <a href="https://caretparrot.github.io/Tile-Rodeo">Tile Rodeo</a>
+        </div>
+        <div id="musicPerformances" data-header="Music Performances" class="page grid">
+            <h2>9th Grade</h2>
+                <h3>Orchestra</h2>
+                    <a href="https://youtu.be/I3n9O93GqHI?si=JJUsdu5nfdLr8HOX&t=2217">Fall</a>
+                    <a href="https://youtu.be/nhPs7ftU_G0?si=Hc5_nhshqkmks6Ot&t=2867">Winter</a>
+            <h2>10th Grade</h2>
+                <h3>Orchestra</h2>
+                    <a href="https://youtu.be/83FvlGsAbc4?si=cYWSi0NvNFVOJFPa&t=2210">Fall</a>
+                    <a href="https://youtu.be/vXTaKR0xFqI?si=HwjmcuqaC7-gFV_A&t=2224">Winter</a>
+                    <a href="https://youtu.be/-9pUF765f0Q?si=RFYhaCJBTyFi5DOn&t=2427">Spring</a>
+            <h2>11th Grade</h2>
+                <h3>Orchestra</h2>
+                    <a href="https://youtu.be/vXTaKR0xFqI?si=HwjmcuqaC7-gFV_A&t=2224">Winter</a>
+                    <a href="https://youtu.be/-9pUF765f0Q?si=RFYhaCJBTyFi5DOn&t=2427">Spring</a>
+                <h3>Solo</h2>
+                    <a href="https://photos.app.goo.gl/gxWetxdF7NYABb3y9">Venkatesh Viola Sonata No. 2</a>
+                <h3>Ensemble</h2>
+                    <a href="https://photos.app.goo.gl/fAnCrae6zHu1fAFC7">Prokofiev String Quartet No. 2</a>
+            <h2>12th Grade</h2>
+                <h3>Orchestra</h2>
+                    <a href="https://youtu.be/R1IzhooMYpM?si=dTBRsDjsquny04NJ&t=2153">Fall</a>
+                    <a href="https://youtu.be/52eAN3Wj8gA?si=tARKPy3LSpyWsOFs&t=2437">Winter</a>
         </div>
     </body>
 
