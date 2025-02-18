@@ -1,3 +1,7 @@
+* {
+    line-height: 1.5rem;
+}
+
 html {
     display: flex;
     height: auto;
@@ -61,10 +65,16 @@ img {
 a {
     width: auto;
     height: auto;
+    font-size: 1.5rem;
 }
 
 @media (orientation: portrait) {
     #aboutMe {
         grid: auto / 1fr;
     }
+}
+
+h1 {
+    padding: 2rem;
+    font-weight: bold;
 }
