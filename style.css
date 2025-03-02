@@ -1,66 +1,19 @@
-* {
-    line-height: 1.5em;
+body * {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-html {
-    display: flex;
-    height: auto;
-}
-
-#codingProjects, #socials, #musicPerformances {
+#socials, #codingProjects {
     display: none;
 }
 
 #navbar {
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-flow: row wrap;
-}
-
-body {
-    grid: auto / 1fr;
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
+    margin: 1rem;
 }
 
 .page {
-    animation-name: slideIn;
-    animation-duration: 0.25s;
-    grid: 1fr / 1fr;
-    width: 100%;
-    flex-flow: row wrap;
-    background-color: transparent;
-}
-
-div * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a {
-    width: auto;
-    height: auto;
-    font-size: 1.5rem;
-    font-weight: normal;
-}
-
-h1 {
-    padding: 2rem;
-    font-weight: bold;
-}
-
-#musicPerformances {
-    grid: auto / 1fr;
-}
-
-h2 {
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    margin: 1rem;
 }
