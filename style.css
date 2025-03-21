@@ -6,6 +6,7 @@
 
 #socials, #codingProjects {
     display: none;
+    flex-flow: row wrap;
 }
 
 .page {
