@@ -16,4 +16,3 @@ function switchPage(pageId, display) {
 
     document.getElementById(pageId).style.display = display;
 }
-
