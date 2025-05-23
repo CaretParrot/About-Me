@@ -1,7 +1,7 @@
 {
     "name": "About Me",
     "short_name": "About Me",
-    "start_url": "/About-Me",
+    "start_url": "/about-me",
     "icons": [
         {
             "src": "https://caretparrot.github.io/My-Libraries/Profile%20Picture.png",
